@@ -1,0 +1,114 @@
+/* navbar */
+*{
+    margin: 0;
+    padding : 0;
+}
+nav{
+   
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height : 50px;
+}
+.logo-image{
+    
+    position : absolute;
+    margin-left : 30px;
+    margin-top : 5px;
+   
+}
+.login{
+
+    float : right;
+    margin-top : -45px; 
+    margin-right: 35px;
+}
+nav ul{
+    text-align : center;
+    list-style-type: none;
+    overflow : hidden;
+}
+nav ul li{
+    display : inline-block;
+}
+nav ul li a{
+    display : block;
+    padding : 8px 16px;
+    margin-top: 5px;
+    text-decoration : none;
+    color : rgb(248, 175, 4);
+   
+}
+nav ul li a:hover{
+
+    background-color: rgb(248, 175, 4);
+    padding : 19px 16px;
+    margin-top : -35px;
+    color: rgb(255, 255, 255);
+
+} 
+.checkbutton{
+    
+    float : right;
+    line-height: 50px;
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+    cursor : pointer;
+    display : none;
+}
+.checkbox{
+    display : none;
+}
+@media screen and (max-width: 958px){
+    
+
+    nav ul{
+
+        float : right;
+        margin-right: 30px;
+        overflow : hidden;
+    }
+}
+@media screen and (max-width: 745px){
+
+    .checkbutton{
+
+        display : block;
+    }
+     nav ul{
+        
+            background-color: chocolate;
+            position : fixed;
+            width : 100%;
+            height : 100vh;
+            top : 50px;
+            left : -100%;
+            transition: all .5s;
+     }
+     nav ul li{
+
+      
+            line-height: 100px;
+            display : block;
+     }
+     nav ul li a{
+
+            color : white;
+            font-size : 20px;
+     }
+    
+
+     .checkbox:checked ~ ul{
+
+        left: 0px;
+    }
+}
+/* end navbar */
+
+/* landing image */
+.image{
+   
+     width : 100%;
+     height : auto;
+  
+}
